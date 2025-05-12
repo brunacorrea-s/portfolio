@@ -1,0 +1,54 @@
+/* ____________________ index ____________________ */
+
+/* FONTES: */
+@font-face {
+    font-family: 'autography';
+    src: url('../fontes/Autography.otf') format('opentype')/*, url('../fontes/Symbiosis\ Free.ttf') format('truetype') >>>>> caso a fonte tenha outro formato tbm */;
+}
+/* FIM FONTES */
+
+.nome {
+    /* background-color: aqua; */
+    font-family: autography;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    color: aliceblue;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.4em;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+body {
+    /* background-color: #91ce91; */
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background: url(../midia/paisagem.gif);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+nav{
+    /* background-color: black; */
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+}
+
+.button_index{
+    background-color: rgb(181, 145, 215);
+    width: 150px;
+    border-radius: 10px;
+    padding: 5%;
+    border: 0px;
+}
+
+.button_index:hover {
+  box-shadow: 0 12px 16px 0 rgba(156, 106, 189, 0.164), 0 17px 50px 0 rgba(0, 0, 0, 0.63);
+  background-color: rgb(219, 117, 197);
+}
