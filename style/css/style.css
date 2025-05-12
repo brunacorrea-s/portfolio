@@ -1,6 +1,6 @@
-/* ____________________ index ____________________ */
+/* ____________________ PÁGINA: index ____________________ */
 
-/* FONTES: */
+/* FONTES USADAS: */
 @font-face {
     font-family: 'autography';
     src: url('../fontes/Autography.otf') format('opentype')/*, url('../fontes/Symbiosis\ Free.ttf') format('truetype') >>>>> caso a fonte tenha outro formato tbm */;
@@ -29,8 +29,8 @@ body {
     margin-bottom: 5%;
     background: url(../midia/paisagem.gif);
     background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat; */
+    background-attachment: fixed; /* background fixo enquanto a página rola */
+    background-repeat: no-repeat;
 }
 
 nav{
@@ -40,6 +40,8 @@ nav{
     gap: 25px;
 }
 
+
+/* --- BOTÕES INDEX: --- */
 .button_index{
     background-color: rgb(181, 145, 215);
     width: 150px;
@@ -52,3 +54,4 @@ nav{
   box-shadow: 0 12px 16px 0 rgba(156, 106, 189, 0.164), 0 17px 50px 0 rgba(0, 0, 0, 0.63);
   background-color: rgb(219, 117, 197);
 }
+/* --- FIM BOTÕES INDEX --- */
