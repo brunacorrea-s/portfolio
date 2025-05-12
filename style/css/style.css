@@ -1,9 +1,9 @@
-/* ____________________ PÁGINA: index ____________________ */
+/* ________________________________________ PÁGINA: index ________________________________________ */
 
 /* FONTES USADAS: */
 @font-face {
     font-family: 'autography';
-    src: url('../fontes/Autography.otf') format('opentype')/*, url('../fontes/Symbiosis\ Free.ttf') format('truetype') >>>>> caso a fonte tenha outro formato tbm */;
+    src: url('../fontes/Autography.otf') format('opentype'); /*, url('../fontes/Symbiosis\ Free.ttf') format('truetype') >>>>> caso a fonte tenha outro formato tbm */
 }
 /* FIM FONTES */
 
@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-body {
+.body_index {
     /* background-color: #91ce91; */
     margin-top: 10%;
     margin-bottom: 5%;
@@ -33,25 +33,127 @@ body {
     background-repeat: no-repeat;
 }
 
-nav{
+.nav_index{
     /* background-color: black; */
     display: grid;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 
 /* --- BOTÕES INDEX: --- */
 .button_index{
     background-color: rgb(181, 145, 215);
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
     padding: 5%;
     border: 0px;
 }
 
 .button_index:hover {
-  box-shadow: 0 12px 16px 0 rgba(156, 106, 189, 0.164), 0 17px 50px 0 rgba(0, 0, 0, 0.63);
-  background-color: rgb(219, 117, 197);
+    box-shadow: 0 12px 16px 0 rgba(156, 106, 189, 0.164), 0 17px 50px 0 rgba(0, 0, 0, 0.63);
+    background-color: rgb(219, 117, 197);
+}
+/* --- FIM BOTÕES INDEX --- */
+
+/* ________________________________________ PÁGINA: sobre_mim ________________________________________ */
+
+.nav_sobre{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url(../midia/campo_lilas.png);
+    background-size: cover;
+    margin: 0%;
+}
+
+.body_sobre{
+    background-color: #bf9dcb;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-column-start
+    grid-column-end
+    
+
+}
+
+.selfie{
+    border-radius: 400px;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.9));
+}
+
+/*10px (deslocamento horizontal)
+Define o quanto a sombra será movida para o lado.
+10px → a sombra será deslocada 10 pixels à direita.
+Pode ser negativo: -10px moveria a sombra para a esquerda.
+
+10px (deslocamento vertical)
+Define o quanto a sombra será movida para baixo.
+10px → a sombra será deslocada 10 pixels para baixo.
+Pode ser negativo: -10px subiria a sombra.
+
+15px (raio de desfoque)
+Define o quanto a sombra será borrada.
+Quanto maior o valor, mais suave e espalhada será a sombra.
+0px = sombra com bordas duras (sem desfoque).
+
+rgba(0, 9, 5, 0.9) (cor da sombra)
+Cor da sombra em formato RGBA:
+R: 0 → vermelho
+G: 9 → verde
+B: 5 → azul
+A: 0.9 → opacidade (90% opaco) */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* background-color: dodgerblue; */
+    /* padding: 10px; */
+}
+
+.grid-container > div /* os filhos diretos do meu grid terão as estruturas que eu mencionar aqui */ {
+    /* background-color: #f1f1f1; */
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0;
+    grid-template-columns: 60% 30% 60%;
+}
+
+.item1 {
+    font-family: autography;
+    font-size: 60px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    color: rgb(255, 255, 255);
+}
+
+.item2 {
+    font-family: autography;
+    font-size: 60px;
+}
+
+.item3 {
+   /* como diminuir um grid por vez */
+}
+
+/* --- BOTÕES INDEX: --- */
+.button_sobre{
+    background-color: transparent;
+    width: 300px;
+    padding: 0.5%;
+    border-radius: 10px;
+    border: 0px;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.4em;
+    }
+
+.button_sobre:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.164), 0 17px 50px 0 rgba(0, 0, 0, 0.63);
+    background-color: rgb(193, 167, 221);
 }
 /* --- FIM BOTÕES INDEX --- */
