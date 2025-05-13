@@ -142,6 +142,16 @@ A: 0.9 → opacidade (90% opaco) */
    /* como diminuir um grid por vez */
 }
 
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer{
+    background-image: url(../midia/campo_lilas.png);
+    /* background-size: cover; */
+    padding: 1%;
+}
 /* --- BOTÕES INDEX: --- */
 .button_sobre{
     background-color: transparent;
