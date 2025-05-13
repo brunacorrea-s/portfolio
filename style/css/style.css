@@ -143,6 +143,11 @@ A: 0.9 → opacidade (90% opaco) */
 }
 
 .item4 {
+    font-family: autography;
+    font-size: 60px;
+}
+
+.item5 {
     grid-column-start: 1;
     grid-column-end: 4;
 }
