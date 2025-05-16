@@ -1,4 +1,6 @@
-/* ________________________________________ PÁGINA: index ________________________________________ */
+/* ___________________________________________________________________________________________________ */
+/* __________________________________________ PÁGINA: index __________________________________________ */
+/* ___________________________________________________________________________________________________ */
 
 /* FONTES USADAS: */
 @font-face {
@@ -56,7 +58,9 @@ a {
 }
 /* --- FIM BOTÕES INDEX --- */
 
+/* ___________________________________________________________________________________________________ */
 /* ________________________________________ PÁGINA: sobre_mim ________________________________________ */
+/* ___________________________________________________________________________________________________ */
 
 .nav_sobre{
     display: flex;
@@ -109,19 +113,19 @@ A: 0.9 → opacidade (90% opaco) */
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
     gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr;  /* "fração do espaço disponível", ele distribui o espaço igualmente */
     /* background-color: dodgerblue; */
     /* padding: 10px; */
 }
 
-.grid-container > div /* os filhos diretos do meu grid terão as estruturas que eu mencionar aqui */ {
+.grid-container /* > div ---> isso faz os filhos diretos do meu grid terem as estruturas que eu mencionar aqui */{
     /* background-color: #f1f1f1; */
     text-align: center;
-    padding: 10px;
+    padding-bottom: 5%;
     font-size: 30px;
-    margin: 0;
-    grid-template-columns: 60% 30% 60%;
+    /* margin: 0; */
+    /* grid-template-columns: 60% 30% 60%; */
 }
 
 .item1 {
@@ -133,29 +137,42 @@ A: 0.9 → opacidade (90% opaco) */
     color: rgb(255, 255, 255);
 }
 
+#texto_sobre{
+    text-align: justify;
+    padding-top: 13%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 .item2 {
-    font-family: autography;
-    font-size: 60px;
+    text-align: center;    
 }
 
 .item3 {
-   /* como diminuir um grid por vez */
+    width: 100%;
 }
 
 .item4 {
-    font-family: autography;
-    font-size: 60px;
+     /* ou uma largura específica */
+    text-align: center;
 }
 
-.item5 {
-    grid-column-start: 1;
-    grid-column-end: 4;
+#titulo_skills{
+    padding-top: 15%;
+    font-size: 25px;
+    font-style: italic;
+}
+#soft_skills{
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 footer{
+    display: flex;
+    justify-content: center;
     background-image: url(../midia/campo_lilas.png);
-    /* background-size: cover; */
-    padding: 1%;
+    background-size: cover;
+    padding-bottom: 9%;
 }
 /* --- BOTÕES INDEX: --- */
 .button_sobre{
@@ -172,3 +189,28 @@ footer{
     background-color: rgb(193, 167, 221);
 }
 /* --- FIM BOTÕES INDEX --- */
+
+/* ___________________________________________________________________________________________________ */
+/* ________________________________________ PÁGINA: curriculo ________________________________________ */
+/* ___________________________________________________________________________________________________ */
+
+#curriculo_titulo{
+    font-family: autography;
+    font-size: 60px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    color: rgb(255, 255, 255);
+}
+
+.curriculo_imagem{
+        border-radius: 20px;
+}
+.curriculo{
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.9));
+}
+
